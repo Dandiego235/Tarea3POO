@@ -77,7 +77,18 @@ public class Empresa extends Entidad {
     }
 
     public void desplegarCantidadClientes(){
+        int cantidadPersonas = 0;
+        int cantidadEmpresas = 0;
+        for (Cliente cliente : clientes){
+            if (cliente.getTipo()){
+                cantidadEmpresas++;
+            } else {
+                cantidadPersonas++;
+            }
+        }
         System.out.println("Cantidad de clientes: " + clientes.size());
+        System.out.println("Cantidad de clientes que son personas: " + cantidadPersonas);
+        System.out.println("Cantidad de clientes que son empresas: " + cantidadEmpresas);
     }
 
     public void desplegarCantidadProveedores(){
