@@ -9,6 +9,8 @@ public class Empresa extends Entidad {
     public Empresa(String pNombre, String pId, int pTelefono, String pDireccion, String pCorreo, String pNombreE, String pIdE, int pTelefonoE, String pDireccionE, String pCorreoE, int pSalarioE, String pFechaE){
         super( pNombre,  pId,  pTelefono,  pDireccion,  pCorreo);
         empleados = new ArrayList<Empleado>();
+        clientes = new ArrayList<Cliente>();
+        proveedores = new ArrayList<Proveedor>();
         incluirEmpleado( pNombreE,  pIdE,  pTelefonoE,  pDireccionE,  pCorreoE,  pSalarioE,  pFechaE);
     }
 
