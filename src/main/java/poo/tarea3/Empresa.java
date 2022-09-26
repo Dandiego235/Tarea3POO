@@ -9,12 +9,12 @@ public class Empresa extends Entidad {
     public Empresa(String pNombre, String pId, int pTelefono, String pDireccion, String pCorreo, String pNombreE, String pIdE, int pTelefonoE, String pDireccionE, String pCorreoE, int pSalarioE, String pFechaE){
         super( pNombre,  pId,  pTelefono,  pDireccion,  pCorreo);
         empleados = new ArrayList<Empleado>();
-        Empleado owner = new Empleado( pNombreE,  pIdE,  pTelefonoE,  pDireccionE,  pCorreoE,  pSalarioE,  pFechaE);
-        incluirEmpleado(owner);
+        incluirEmpleado( pNombreE,  pIdE,  pTelefonoE,  pDireccionE,  pCorreoE,  pSalarioE,  pFechaE);
     }
 
-    public void incluirCliente(Cliente pCliente){
-        clientes.add(pCliente);
+    public void incluirCliente(String pNombre, String pId, int pTelefono, String pDireccion, String pCorreo, int pLimite, String pFecha, boolean pTipo){
+        Cliente cliente = new Cliente( pNombre,  pId,  pTelefono,  pDireccion,  pCorreo,  pLimite,  pFecha,  pTipo);
+        clientes.add(cliente);
     }
 
     public void modificarCliente(String identificacion, String pNombre, String pId, int pTelefono, String pDireccion, String pCorreo, int pLimite, String pFecha){
@@ -46,12 +46,14 @@ public class Empresa extends Entidad {
         }
     }
 
-    public void incluirEmpleado(Empleado pEmpleado){
-        empleados.add(pEmpleado);
+    public void incluirEmpleado(String pNombre, String pId, int pTelefono, String pDireccion, String pCorreo, int pSalario, String pFecha){
+        Empleado empleado = new Empleado(pNombre,  pId,  pTelefono,  pDireccion,  pCorreo,  pSalario,  pFecha);
+        empleados.add(empleado);
     }
 
-    public void incluirProveedor(Proveedor pProveedor){
-        proveedores.add(pProveedor);
+    public void incluirProveedor(String pNombre, String pId, int pTelefono, String pDireccion, String pCorreo, int pLimite, String pFecha, boolean pTipo){
+        Proveedor proveedor = new Proveedor( pNombre,  pId,  pTelefono,  pDireccion,  pCorreo,  pLimite,  pFecha,  pTipo);
+        proveedores.add(proveedor);
     }
 
     public void desplegarClientes(){
