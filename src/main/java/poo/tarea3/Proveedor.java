@@ -5,8 +5,8 @@ public class Proveedor extends Cliente{
         super(pNombre, pId, pTelefono, pDireccion, pCorreo, pLimite, pFecha, pTipo);
     }
 
+    @Override
     public String toString(){
-        String texto = super.toString();
-        return texto;
+        return super.toString();
     }
 }

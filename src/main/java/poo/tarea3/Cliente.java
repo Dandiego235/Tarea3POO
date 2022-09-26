@@ -43,6 +43,7 @@ public class Cliente extends Entidad{
     
     // No hay un método llamado setBoolean porque no vamos a permitir que se le cambie el tipo a un cliente luego de haberse creado.
     
+    @Override
     public String toString(){
         String tipoStr = (tipo) ? "Empresa" : "Persona";
         return super.toString() + "Limite de crédito: " + limiteCredito + "\nFecha: " + fecha + "\nTipo: " + tipoStr + "\n";
