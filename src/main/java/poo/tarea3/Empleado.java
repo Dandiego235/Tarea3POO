@@ -51,7 +51,7 @@ public class Empleado extends Entidad{
     // Salida: toda la información del empleado
     public String toString(){
         String texto = super.toString();
-        texto += "Salario: " + salario + "\nFecha: " + fecha + "\n";
+        texto += "Salario mensual: " + salario + "\nFecha de ingreso a la empresa: " + fecha + "\n";
         return texto;
     }
 }
