@@ -9,12 +9,16 @@ package poo.tarea3;
  * @author Dandiego
  */
 public class Entidad {
+    // Atributos de la clase entidad
     private String nombre;
     private String identificacion;
     private int telefono;
     private String direccion;
     private String correo;
     
+    // Función: Es el constructor de la clase
+    // Entrada: Recibe los parámetros de la entidad
+    // Salida: nada
     public Entidad(String pNombre, String pId, int pTelefono, String pDireccion, String pCorreo){
         nombre = pNombre;
         identificacion = pId;
@@ -23,6 +27,7 @@ public class Entidad {
         correo = pCorreo;
     }
     
+    // Setters y getters de los atributos del objeto
     public void setNombre(String pNombre){
         nombre = pNombre;
     }
@@ -63,6 +68,9 @@ public class Entidad {
         return correo;
     }
     
+    // Función: Despliega la información del string
+    // Entrada: nada
+    // Salida: El texto con la información a desplegar.
     public String toString(){
         return "Nombre: " + nombre + "\nIdentificación: " + identificacion + 
                 "\nTeléfono: " + telefono + "\nDirección: " + direccion + "\nCorreo: " + correo + "\n";

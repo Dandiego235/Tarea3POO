@@ -7,7 +7,9 @@ package poo.tarea3;
 
 /**
  *
- * @author Dandiego
+ * @author Daniel Granados Retana y Diego Granados Retana
+ *  Tarea 3: Programación Orientada a Objetos
+ * 26 de setiembre, 2022
  */
 public class Tarea3 {
 
