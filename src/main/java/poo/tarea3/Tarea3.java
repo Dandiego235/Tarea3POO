@@ -23,17 +23,18 @@ public class Tarea3 {
         empresa.incluirEmpleado("Ori Babich", "17465", 44444444, "San Petersburgo", "ori.babich@personally.com", 1500, "02/10/2022");
         empresa.incluirEmpleado("William Mata", "23612", 55555555, "Cartago", "william.mata@personally.com", 15000, "10/10/2022");
         
-        empresa.incluirCliente("Tecnológico de Costa Rica", "99999", 22212352, "Cartago", "cliente@itcr.ac.cr", 10000, "26/09/2022", true);
-        empresa.incluirCliente("Apple", "34567", 72345987, "Cupertino", "sales@apple.com", 500000, "27/09/2022", true);
-        empresa.incluirCliente("David Navas", "73412", 66666666, "Tres Ríos", "davnav@gmail.com", 25000, "26/09/2022", false);
-        empresa.incluirCliente("Javier Sánchez", "35821", 77777777, "Santa Ana", "lexjavfire@itcr.ac.cr", 1000, "26/09/2022", false);
+        empresa.incluirCliente("Tecnológico de Costa Rica", "99999", 22212352, "Cartago", "cliente@itcr.ac.cr", 10000, "26/09/2022", "Manuel Granados", 46288431);
+        empresa.incluirCliente("Apple", "34567", 72345987, "Cupertino", "sales@apple.com", 500000, "27/09/2022", "Diego Retana", 10768724);
+        empresa.incluirCliente("David Navas", "73412", 66666666, "Tres Ríos", "davnav@gmail.com", 25000, "26/09/2022");
+        empresa.incluirCliente("Javier Sánchez", "35821", 77777777, "Santa Ana", "lexjavfire@itcr.ac.cr", 1000, "26/09/2022");
         
         empresa.modificarCliente("35821", "", "", 0, "", "jav.sanchez@gmail.com", 0, "");
-        
-        empresa.incluirProveedor("María Solano", "28336", 72564890, "Cartago", "marsol@gmail.com", 12000, "26/09/2022", false);
-        empresa.incluirProveedor("Google", "93257", 12360984, "Silicon Valley", "providers@google.com", 1000000, "30/09/2022", true);
-        empresa.incluirProveedor("Gabriela Chaves", "89279", 23465647, "Heredia", "gabchav@yahoo.com", 25000, "15/10/2022", false);
-        empresa.incluirProveedor("Wix", "46722", 88888888, "Londres", "business@wix.com", 3000, "20/11/2022", true);
+        empresa.modificarCliente("34567", "", "49851", 0, "", "timcook@apple.com", 1000000, "", "Tim Cook", 45923452);
+
+        empresa.incluirProveedor("María Solano", "28336", 72564890, "Cartago", "marsol@gmail.com", 12000, "26/09/2022");
+        empresa.incluirProveedor("Google", "93257", 12360984, "Silicon Valley", "providers@google.com", 1000000, "30/09/2022", "Margarita Corrales", 89230324);
+        empresa.incluirProveedor("Gabriela Chaves", "89279", 23465647, "Heredia", "gabchav@yahoo.com", 25000, "15/10/2022");
+        empresa.incluirProveedor("Wix", "46722", 88888888, "Londres", "business@wix.com", 3000, "20/11/2022", "Avishai Abrahami", 72946103);
         
         System.out.println("Registros de empleados: ");
         empresa.desplegarEmpleados();
@@ -46,6 +47,7 @@ public class Tarea3 {
         
         System.out.println("Cantidad de clientes: ");
         empresa.desplegarCantidadClientes();
+        System.out.println("\n");
         
         System.out.println("Cantidad de proveedores: ");
         empresa.desplegarCantidadProveedores();
