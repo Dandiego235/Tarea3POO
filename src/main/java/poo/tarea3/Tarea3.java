@@ -19,7 +19,7 @@ public class Tarea3 {
         
         empresa.incluirEmpleado("Diego Granados", "10545", 11111111, "Curridabat", "diego.granados@personally.com", 1000, "25/09/2022");
         empresa.incluirEmpleado("Tomás Antillón", "10293", 22222222, "Escazú", "tomas.antillon@personally.com", 1500, "26/09/2022");
-        empresa.incluirEmpleado("Roberto Rodríguez", "13562", 333333333, "San Pedro", "roberto.rodriguez@personally.com", 2000, "31/09/2022");
+        empresa.incluirEmpleado("Ricardo Vargas", "13562", 333333333, "San Pedro", "ricardo.vargas@personally.com", 2000, "31/09/2022");
         empresa.incluirEmpleado("Ori Babich", "17465", 44444444, "San Petersburgo", "ori.babich@personally.com", 1500, "02/10/2022");
         empresa.incluirEmpleado("William Mata", "23612", 55555555, "Cartago", "william.mata@personally.com", 15000, "10/10/2022");
         
